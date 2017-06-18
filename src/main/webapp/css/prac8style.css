@@ -1,0 +1,19 @@
+body{
+	
+}
+#datatable{
+	width:60%;
+	border:1px solid black;
+	float:left;
+}
+#dataform{
+	width:38%;
+	border: 1px solid black;
+	float:left;
+}
+input[type="text"], input[type="number"]  {
+     width: 100%; 
+     box-sizing: border-box;
+     -webkit-box-sizing:border-box;
+     -moz-box-sizing: border-box;
+}

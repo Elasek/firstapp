@@ -1,0 +1,54 @@
+body{
+	background-color:lightgrey;
+}
+label{
+	width:100%;
+	float:left;
+}
+@media only screen and (min-width: 700px) {
+	#frame {
+	  display: grid;
+	  grid-template-columns: 1fr 2fr;
+	  grid-template-rows: 0.75fr 3fr 0.75fr 150fr;
+	  grid-column-gap: 10px;
+	  grid-row-gap: 10px;
+	}
+	#header { grid-column: 1/2; grid-row: 1; }
+	#weerheader{ grid-column: 2/3; grid-row: 1; }
+	#myLocation{ grid-column: 1/2; grid-row:2; }
+	#weatherInfo{ grid-column: 2/3; grid-row:2; }
+	#headerlist { grid-column: 1/3; grid-row: 3; }
+	#countryList { grid-column: 1/3; grid-row: 4; }
+}
+@media only screen and (max-width: 700px) {
+	#frame {
+	  display: grid;
+	  grid-template-columns: 1fr;
+	  grid-template-rows: 0.75fr 2fr 0.75fr 2fr 0.75fr 10fr;
+	  grid-row-gap: 10px;
+	}
+	#header { grid-column: 1/2; grid-row: 1; }
+	#weerheader{ grid-column: 1/2; grid-row: 3; }
+	#myLocation{ grid-column: 1/2; grid-row:2; }
+	#weatherInfo{ grid-column: 1/2; grid-row:4; }
+	#headerlist { grid-column: 1/2; grid-row: 5; }
+	#countryList { grid-column: 1/2; grid-row: 6; }
+}
+
+#header,#weerheader,#headerlist{
+	background-color:grey;
+	color:white;
+	font-size:20px;
+}
+#tableWrapper{
+	overflow-x:auto;
+}
+#datatable{
+	text-align:left;
+	background-color:grey;
+	width:100%;
+}
+#datatable td:hover, #stad:hover{
+	color:white;
+	cursor:pointer;
+}

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>cookies</title>
+</head>
+<body>
+ <label id="tekst">hier komt de tekst</label>
+ <script>window.addEventListener('storage', function(event) {  
+	    console.log("changed key: " + event.key);
+	    console.log("old value  : " + event.newValue);
+	    console.log("old value  : " + event.oldValue);
+	    console.log("storage    : " + event.storageArea);
+	    console.log("url        : " + event.url);
+	    document.querySelector("#tekst").textContent = event.newValue;
+	});</script>
+</body>
+</html>
